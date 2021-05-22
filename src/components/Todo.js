@@ -21,7 +21,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   return (
     <div className="todo">
       <li className="todo-item">{text}</li>
-      <button className="complete-btn">
+      <button onClick={completeHandler} className="complete-btn">
         <i className="fas fa-check"></i>
       </button>
       <button onClick={deleteHandler} className="trash-btn">
