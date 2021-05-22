@@ -1,10 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Form from './components/Form';
+import ToDoList  from './components/ToDoList'
 
 function App() {
   return (
     <div className="App">
-      <h1>Odero OLuoch</h1>
+      <header>
+        <h1>Odero : To Do List</h1>
+      </header>
+      <Form />
+      <ToDoList />
     </div>
   );
 }
