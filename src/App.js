@@ -3,7 +3,7 @@ import "./App.css";
 
 import Form from "./components/Form";
 import ToDoList from "./components/ToDoList";
-import Todo from './components/Todo'
+import Todo from "./components/Todo";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -19,7 +19,7 @@ function App() {
         setTodos={setTodos}
         setInputText={setInputText}
       />
-      <ToDoList todos={todos} />
+      <ToDoList setTodos={setTodos} todos={todos} />
     </div>
   );
 }
